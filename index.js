@@ -1,6 +1,6 @@
-let port = process.env.PORT || 3008;
-let app = require("./VotingSystem");
+const app = require("./app");
 
-app.listen(port,()=>{
-    console.log(`Server Started on Port Number:${port}`);
-})
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Started express server at ${port}`);
+});
